@@ -29,6 +29,14 @@ module.exports = {
         name: 'images',
       },
     },
+    {
+      resolve: 'gatsby-source-google-sheets',
+      options: {
+        spreadsheetId: '1kMsPdVwJxPHMXMW5lUbtEJqofHYpLFxErg6TQ3MN10w',
+        worksheetTitle: '88names',
+        credentials: require('./client_secret.json')
+      }
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
